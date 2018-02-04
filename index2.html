@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Loading Animations</title>
+  <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jade/1.11.0/jade.min.js"></script>
+  <script src="https://unpkg.com/aframe-template-component@^3.2.1/dist/aframe-template-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-layout-component@4.1.0/dist/aframe-layout-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+  <script src="components/set-image.js"></script>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+   <script src="play-on-window-click.js"></script>
+  <script src="play-on-vrdisplayactivate-or-enter-vr.js"></script>
+  
+  <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.3/dist/aframe-extras.min.js"></script>
+<!--   <script src="/js/index.js"></script> -->
+  
+  <script>
+        
+     var videoEl = document.querySelector('#video');
+        videoEl.currentTime = 122;  // Seek to 122 seconds.
+        videoEl.pause();   
+        </script>
+  
+  
+</head>
+
+   <body>
+      <a-scene>
+      <!-- The original example also has this 180 degree rotation, to appear to be going forward. -->
+      <a-videosphere rotation="0 -90 0" src="#video" 
+                     play-on-window-click
+                     play-on-vrdisplayactivate-or-enter-vr>
+      </a-videosphere>
+      
+      <!-- Define camera with zero user height, movement disabled and arrow key rotation added. -->
+      <a-camera user-height="0" wasd-controls-enabled="false" arrow-key-rotation>
+        <!-- Text element for display messaging.  Hide once video is playing. 
+        value:Click window to make the video play, if needed.-->
+        <a-entity id="msg" position="0 -0.3 -1.5" text="align:center; 
+                width:3;
+                wrapCount:100;
+                color:red;
+                "
+                hide-once-playing="#video">
+        </a-entity>
+      </a-camera>      
+      
+      <!-- Wait for the video to load. https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/ -->
+      <a-assets>
+        <!-- Single source video. -->
+        
+        
+        <video id="video" style="display:none" 
+               autoplay="false"
+               loop="true"
+               crossorigin="anonymous" playsinline webkit-playsinline>
+          <!-- MP4 video source. -->
+          <source type="video/mp4"
+               src="https://cdn.glitch.com/2aacf851-28d4-4774-9b4f-833bfbc4b2d8%2FWater_MASTER.mp4?1512867528556"/>
+
+
+        </video>
+      </a-assets>
+        
+  
+        
+    </a-scene>
+  </body>
+</html>
+
+
+
+
+
