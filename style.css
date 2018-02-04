@@ -1,0 +1,312 @@
+nav {
+	padding: 24px;
+}
+
+
+body{
+  background-color: black;
+  background-image: url("https://cdn.glitch.com/ca1aa3fe-71c0-43d8-afa4-80aca7d0090b%2Fbackground1.jpg?1512837354432");
+	background-size: cover;
+  background-position: center center;
+  width: 100%; 
+}
+
+#navigationlinks{
+	display: table;
+    margin: 0 auto;
+    text-align:center;
+    font-style: Open Sans;
+}
+
+#brand{
+	width: 140px;
+	height:95.51px;
+	display: block;
+	margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.navigation {
+	text-decoration:none;
+	display: inline-block;
+	color: black;
+	font-style: Open Sans;
+	font-size: 14px;
+	margin: 14px;
+	text-align: center;
+
+}
+
+
+.tribeca{
+   margin: auto;
+   width: 70%;
+   margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.opening{
+   margin: auto;
+   width: 70%;
+   margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+#firstparagraph {
+	font-family: Open Sans;
+	color: #f7f7f7;
+	font-weight: 100;
+	letter-spacing: 1px;
+	font-size:24px;
+	text-align: center;
+	padding-top: 48px;
+	margin: auto;
+}
+
+#line {
+	text-decoration: line-through;
+
+}
+
+
+/*body*/
+
+
+
+.projects1 {
+	width: 100vw;
+	height: 100vh;
+	float:right;
+  margin:40px;
+	position: relative;
+  align: right;
+}
+
+.projects2 {
+
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	margin-top: 4px;
+	position: relative;
+  align: left;
+
+}
+
+
+
+/*title block*/
+
+.titles2{
+	display: inline-block;
+	position: absolute;
+	top: 0px,
+	margin-left: 20px;
+	margin-top: -240px;
+	z-index: 2;
+	text-align: left;
+}
+
+
+.titles1{
+	display: block;
+	position: absolute;
+	top: 0px,
+	margin-left: 20px;
+	margin-top: -240px;
+	z-index: 2;
+	text-align: left;
+}
+
+
+
+.text{
+	text-shadow: 2px 2px #ff0000;
+}
+
+.titles2, .title:hover{
+	margin-left:30px;
+	transition: 0.6s ease-out;
+
+}
+
+.image{
+  
+	width: 400px;
+  height: auto;
+	/*position: relative;
+	left: 0;*/
+	
+}
+
+
+.image:hover{
+	margin-left: -40px;
+	transition: 0.6s ease-out;
+
+
+}
+
+
+h1 {
+	position: relative;
+	width:640px;
+	font-family: Open Sans;
+	color: #d4c7c6;
+	font-weight: 600;
+	font-size: 92px;
+	text-align: left;
+	letter-spacing: 12px;
+	line-height: 96px;
+	margin-left: 20px;
+	display: block;
+	margin-bottom:92px;	
+	
+}
+
+
+h2{
+	font-family: Open Sans;
+	position: relative;
+	width: 640px
+	letter-spacing: 2px;
+	color: #f7f7f7;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: left;
+	display: block;
+	margin-top: -80px;
+	margin-left: 20px;
+	display: block;
+  
+	
+}
+
+
+h3{
+	font-family: Open Sans;
+	position: relative;
+	width: 640px
+	letter-spacing: 4px;
+	color: #efefef;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	display: block;
+  margin: 
+	display: block;
+	
+}
+
+
+.title_color {
+	font-family: Open Sans;
+	color: #F9856C;
+	font-weight: 600;
+	font-size: 96px;
+	text-align: left;
+
+}
+
+.startbutton {
+	background-color: #ff574d;
+	border: 1px solid #ff574d;
+	border-radius: 24px;
+  opacity: 0.8;
+	width:160px;
+	height:48px;
+	margin: 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.startbutton:hover {
+	opacity: 0.6;
+	transition: 0.2s ease-in;	
+}
+
+
+
+
+/*Project 1*/
+
+
+
+.parallax {
+  
+    /* Full height */
+    margin: auto;
+    width: 100%;
+    height: 100%; 
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+    text-align:center;
+}
+
+.parallax__layer {
+  
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.parallax__layer--base {
+
+ 
+  transform: translateZ(0px);
+  display: inline-block;
+  text-align:center;
+}
+
+.parallax__layer--back {
+  margin: auto;
+  width: 100%;
+  transform: translateZ(-1px) scale(1.5);
+}
+
+.parallax__group {
+  margin: auto;
+  width: 100%;
+  position: relative;
+/*   height: 100vh; */
+  transform-style: preserve-3d;
+}
+
+
+
+
+.us {
+	display: inline-block;
+  margin: 14px;
+	text-align: center;
+  text-decoration: none;
+  color: #d4c7c6;
+
+}
+
+.us:hover {
+	opacity: 0.6;
+	transition: 0.2s ease-in;	
+}
+
+footer {
+	display: block;
+	padding: 40px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 120px;
+  color: #d4c7c6;
+
+} 
